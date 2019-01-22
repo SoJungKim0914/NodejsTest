@@ -1,0 +1,14 @@
+<!-- http://localhost:3000/process_create 이 주소로 전송하겠다는 뜻  -->
+<form action = "http://localhost:3000/process_create" method="post">
+  <!--placeholder는 입력창에 가이드하는 글씨. 글씨 입력하면 사라지는 설명  -->
+  <p><input type="text" name="title" placeholder="title"></p>
+  <p>
+    <!-- 여러 줄 입력하기 -->
+    <textarea name="description"></textarea>
+  </p>
+  <p>
+    <!-- 전송 버튼이 생김 -->
+    <!-- 버튼을 눌렀을 때 위의 내용을 queryString의 형태로 전송 -->
+    <input type="submit">
+  </p>
+</form>
